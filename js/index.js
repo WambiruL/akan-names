@@ -23,7 +23,7 @@ function calculateDay(){
 }
 
 //select gender
-function totalElements(){
+function getGender(){
     let allGenders=document.getElementsByName("gender");
 }
 
@@ -36,6 +36,9 @@ let femaleNames=["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
 function dayOfWeek(){
     getInput();
     calculateDay();
-    allGenders();
+    getGender();
 }
 
+switch(true){
+    case 
+}
