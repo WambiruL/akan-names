@@ -1,4 +1,4 @@
-let century,year,month,date,day0fWeek;
+//let century,year,month,date,day0fWeek;
 //get input
 function getInput(){
     century=parseInt(document.getElementsByName("century").value);
@@ -19,13 +19,12 @@ function getInput(){
 
 //calculate day
 function calculateDay(){
-    getInput();
-    dayOfWeek=( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
+    ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
 }
 
 //select gender
-function getGender(){
-    let gender=document.getElementsByName("male", "female");
+function totalElements(){
+    let allGenders=document.getElementsByName("gender");
 }
 
 //days,male names,female names
@@ -35,6 +34,8 @@ let femaleNames=["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
 
 //call functions
 function dayOfWeek(){
+    getInput();
     calculateDay();
-    getGender();
+    allGenders();
 }
+
