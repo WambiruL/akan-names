@@ -38,7 +38,14 @@ function dayOfWeek(){
     calculateDay();
     getGender();
 }
+let result=dayOfWeek()
 
 switch(true){
-    case 
+    case "male":
+        switch(true){
+            case dayOfWeek[0]:document.getElementsByName("result")=alert("The day is on a Sunday." + " Your akan name is" +maleNames);
+            break;
+               
+
+        }
 }
