@@ -21,7 +21,6 @@ body{
     background-size: cover;
     border: 1px solid black;
     font-weight: bolder;
-    padding-bottom: 9%;
     font-size: 20px;
     color: darkorange
     
@@ -41,8 +40,6 @@ ul{
 }
 .footer{
     border: 1px solid;
-    padding-right: 9%;
-    padding: 1px;
     background-color: gray;
     text-align: center;
 }
