@@ -33,3 +33,7 @@ function getGender(){
     let gender=document.getElementsByName("male", "female");
 }
 
+//days,male names,female names
+let dayOfWeek=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+let femaleNames=["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
