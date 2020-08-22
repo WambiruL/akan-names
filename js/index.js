@@ -28,3 +28,8 @@ function calculateDay(){
         return dayOfWeek;
     }
 }
+//select gender
+function getGender(){
+    let gender=document.getElementsByName("male", "female");
+}
+
