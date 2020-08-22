@@ -2,11 +2,6 @@ img{
     border-radius: 50%;
     width: 200px;
 }
-.jumbotron{
-    background-image: url(../images/twinkling\ stars.gif);
-    padding: 6px;
-    border: 4px ridge;
-}
 h1{
     text-align: center;
 }
