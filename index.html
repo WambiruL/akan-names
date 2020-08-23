@@ -74,11 +74,10 @@
                        <p><label for="date">Enter date of birth:</label>
                        <input type="number" class="form-control" id="date" min="1" max="31"></p>
                       <p><label for="gender">Male:</label>
-                       <input type="radio" class="gender-labels" name="gender" value="male">
+                       <input type="radio" id="gen1" class="gender-labels" name="gender" value="male">
                        <label for="gender">Female:</label>
-                       <input type="radio" class="gender-labels" name="gender" value="female"></p>
-                       <a href="#result"><button type="button" name="button" class="btn btn-info" onclick="checkDayOfWeek();">Generate Name</button></a>
-                    <h1 id="button"></h1>
+                       <input type="radio" id="gen2" class="gender-labels" name="gender" value="female"></p>
+                       <button type="button" id="button" name="button" class="btn btn-info">Generate Name</button></a>
                        <input type="reset" class="btn btn-info" value="Reset" onclick="refreshPage()"></button>
                     </form>
                 </div>
