@@ -70,13 +70,14 @@
                        <input type="number" class="form-control" name="year" min="1950" max="2030"><p>
                        <p><label for="month">Enter Month of  Birth:</label>
                        <input type="number" class="form-control" name="month" min="1" max="12" ></p>
-                       <p><label for="date">Enter date of birth</label>
+                       <p><label for="date">Enter date of birth:</label>
                        <input type="number" class="form-control" name="date" min="1" max="31"></p>
                       <p><label for="gender">Male:</label>
                        <input type="radio" class="gender-labels" name="gender" value="male">
                        <label for="gender">Female:</label>
                        <input type="radio" class="gender-labels" name="gender" value="female"></p>
-                       <input type="button" onclick= "result" value="Generate name"><br></br>
+                       <button type="button" name="button" class="btn btn-info" onclick= "getInput()" value="Generate name"><br></br>
+                       <button type="reset" class="btn btn-info" value="reset" onclick="refreshPage()"></button>
                     </form>
                 </div>
            </div>
