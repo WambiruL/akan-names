@@ -18,9 +18,8 @@ function getInput(){
 }
 
 //calculate day
-function calculateDay(){
-    ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
-}
+let calculateDay=( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
+
 
 //select gender
 function getGender(){
@@ -40,12 +39,3 @@ function dayOfWeek(){
 }
 let result=dayOfWeek()
 
-switch(true){
-    case "male":
-        switch(true){
-            case dayOfWeek[0]:document.getElementsByName("result")=alert("The day is on a Sunday." + " Your akan name is" +maleNames);
-            break;
-               
-
-        }
-}
