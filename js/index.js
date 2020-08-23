@@ -29,7 +29,11 @@ let day=new Date( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/1
 //call getDay method to store date
 let dateOfBirth=day.getDay();
 
-
+if (male.checked==true){
+    document.getElementsByName("gender")=alert("Yay! You were born on," + day0fWeek[dateOfBirth]+ (".Your Akan Name is") + maleNames[dateOfBirth]);
+}else if(female.checked==true){
+    document.getElementsByName("gender")=alert("")
+}
 
 //refresh button
 function refreshPage(){
