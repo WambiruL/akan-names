@@ -32,7 +32,7 @@ let dateOfBirth=day.getDay();
 if (male.checked==true){
     document.getElementsByName("gender")=alert("Yay! You were born on," + day0fWeek[dateOfBirth]+ (".Your Akan Name is") + maleNames[dateOfBirth]);
 }else if(female.checked==true){
-    document.getElementsByName("gender")=alert("")
+    document.getElementsByName("gender")=alert("Yay! You were born on," + day0fWeek[dateOfBirth] + ("Your Akan Name is")+ femaleNames[dateOfBirth]);
 }
 
 //refresh button
