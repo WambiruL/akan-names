@@ -18,7 +18,7 @@ function getInput(){
 }
 
 //calculate day
-let calculateDay=( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
+let date=new Date( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
 
 
 //select gender
@@ -31,11 +31,10 @@ let dayOfWeek=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 let maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames=["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
 
-//call functions
-function dayOfWeek(){
-    getInput();
-    calculateDay();
-    getGender();
-}
-let result=dayOfWeek()
+//call getDay method to store date
+let dateOfBirth=date.getDay();
+
+
+
+
 
