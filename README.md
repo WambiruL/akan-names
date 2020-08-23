@@ -32,6 +32,9 @@ INPUT
 <li>JavaScript</li>
 <li>Bootstrap</li>
 
+# Known Bugs
+The application is unable to generate the day of birth and Akan name at the moment.
+
 # Contact Information
 Email me: wambirulorraine@gmail.com
 
