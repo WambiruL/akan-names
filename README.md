@@ -4,6 +4,8 @@ Akan Name Generator
 # Project Description
 The project is able to generate the akan name of the person according to gender and the day of birth.
 
+# Demo
+https://wambirul.github.io/akan-names/
 # The Author
 Lorraine Wambui Wambiru
 
@@ -33,5 +35,5 @@ INPUT
 # Contact Information
 Email me: wambirulorraine@gmail.com
 
-# Licence
-This project is licenced by MIT.
+# License
+This project is licensed by MIT.
