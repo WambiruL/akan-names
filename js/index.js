@@ -1,9 +1,11 @@
+document.getElementById("alert1").style.display = "none";
+document.getElementById("alert2").style.display = "none";
 //get input
 function getInput(){
-    let century=(document.getElementsById("century").value);
-    let year=(document.getElementsById("year").value);
-    let month=(document.getElementsById("month").value);
-    let date=(document.getElementsById("date").value);
+    let century=parseInt(document.getElementsById("century").value);
+    let year=parseInt(document.getElementsById("year").value);
+    let month=parseInt(document.getElementsById("month").value);
+    let date=parseInt(document.getElementsById("date").value);
     let error_message=document.getElementById("error_message");
     let text;
     
@@ -36,89 +38,29 @@ let maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames=["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
 
 //calculate day
-function calculateDay(){
-    ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
-}
-
-function checkDayOfWeek(){
-    getInput();
-   let day = calculateDay();
-     checkGender();
-}
+let date=new Date( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
+let dateOfBirth=(date.getDay);
 
 function checkGender(){
-    document.getElementsByName("gender");
-}
+  let gen1=document.getElementById(gen1);
+  let gen2=document.getElementById(gen2);
 
-let gender=checkGender();{
-    let gender="male";
-    if (gender==true){
-    let gender="female";
-    }else if(gender==true){
-    }else{
-        console.log("You have to check which gender you are:)")
-    }
-}
+  if(gen1.checked==true){
+    document.getElementById("alert1").style.display="block";
+    document.getElementById("span1").innerHTML=
+    "Yay! Your were born on, "+dayOfWeek[dateOfBirth];
+    document.getElementById("span2").innerHTML=
+    "Your akan name is "+ maleNames[dateofBirth];
+  }else if(gen2.checked==true){
+    document.getElementById("alert1").style.display="block";
+    document.getElementById("span1").innerHTML=
+    "Yay! Your were born on, "+ dayOfWeek[dateOfBirth];
+    document.getElementById("span2").innerHTML=
+    "Your akan name is "+ femaleNames[dateOfBirth];
+  }else{
+    alert("Check valid gender");
+  }
 
-
-switch(gender){
-    case gender = "male":
-          switch(day){
-            case [0]:
-              document.getElementsByName("button").innerHTML = "The day is on a sunday." + "  " + "Your akan name is " + maleNames[0];
-            break;
-            case [1]:
-              document.getElementsByName("button").innerHTML = "The day is on a monday." + " " + "Your akan name is " + maleNames[1];
-            break;
-            case [2]:
-              document.getElementsByName("buton").innerHTML = "The day is on a tuesday." + " " + "Your akan name is " + maleNames[2];
-            break;
-            case [3]:
-              document.getElementsByName("button").innerHTML = "The day is on a wednesday." + " " + "Your akan name is "+ maleNames[3];
-            break;
-            case [4]:
-              document.getElementsByName("button").innerHTML = "The day is on a thursday." + " " + "Your akan name is " + maleNames[4];
-            break;
-            case [5]:
-              document.getElementsByName("button").innerHTML = "The day is on a friday." + " " + "Your akan name is " + maleNames[5];
-            break;
-            case [6]:
-              document.getElementsByName("button").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + maleNames[6];
-            break;
-            default:
-                console.log("No day for you:(");
-          }
-    break;
-    case gender = "female":
-            switch(day){
-              case [0]:
-                document.getElementsByName("button").innerHTML = "The day is on a sunday." + "  " + "Your akan name is  akosua";
-              break;
-              case [1]:
-                document.getElementsByName("button").innerHTML = "The day is on a monday." + " " + "Your akan name is adwoa ";
-              break;
-              case [2]:
-                document.getElementsByName("button").innerHTML = "The day is on a tuesday." + " " + "Your akan name is abenaa";
-              break;
-              case [3]:
-                document.getElementsByName("button").innerHTML = "The day is on a wednesday." + " " + "Your akan name is akua";
-              break;
-              case [4]:
-                document.getElementsByName("button").innerHTML = "The day is on a thursday." + " " + "Your akan name is yaa";
-              break;
-              case [5]:
-                document.getElementsByName("button").innerHTML = "The day is on a friday." + " " + "Your akan name is afua";
-              break;
-              case [6]:
-                document.getElementsByName("button").innerHTML = "The day is on a saturday." + " " + "Your akan name is ama";
-              break;
-              default:
-                console.log("No day for you:(");
-
-          }
-    break;
-    default:
-        console.log("No day for you:(");
 }
 
 //refresh button
