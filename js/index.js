@@ -17,22 +17,18 @@ function getInput(){
     }
 }
 
-//calculate day
-let day=new Date( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
-
-
-//select gender
-function getGender(){
-    let allGenders=document.getElementsByName("gender");
-}
-
 //days,male names,female names
 let dayOfWeek=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames=["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
 
+//calculate day
+let day=new Date( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date)%7;
+
+
 //call getDay method to store date
 let dateOfBirth=day.getDay();
+
 
 
 //refresh button
